@@ -5,4 +5,5 @@ func main() {
 	multiple(50, 10)
 	primeNumber(1)
 	exponentiation(4, 5)
+	binary("WATER")
 }
