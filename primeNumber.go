@@ -3,8 +3,9 @@ package main
 import "fmt"
 
 func primeNumber(n int) bool {
-	isPrimeNumber := false
+	isPrimeNum := false
 	sums := []int{}
+
 	for i := 1; i <= n; i++ {
 		for j := 1; j <= n; j++ {
 			if i*j == n {
@@ -14,11 +15,10 @@ func primeNumber(n int) bool {
 	}
 
 	if len(sums) == 2 {
-		isPrimeNumber = true
-
+		isPrimeNum = true
 	} else {
-		isPrimeNumber = false
+		isPrimeNum = false
 	}
-	fmt.Println(isPrimeNumber)
-	return isPrimeNumber
+	fmt.Println(isPrimeNum)
+	return isPrimeNum
 }
